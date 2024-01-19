@@ -46,11 +46,11 @@
 // arr2.forEach((item) => {console.log(i) })
 
 for (let i = 0; i < arr.length; i++){
-    for(let j = 1; j < arr.length - 1; j++) {
+    for(let j = 0; j < arr.length - 1; j++) {
         if(arr[i] > arr[j]) {
-            let buff = arr[i]
-            arr[i] = arr[j]
-            arr[j] = buff
+            let buff = arr[j]
+            arr[i] = arr[j + 1]
+            arr[j + 1] = buff
         }
         
     }
