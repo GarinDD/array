@@ -71,4 +71,14 @@ let objArr = [1,2]
 
 objArr[2] = 3
 
+function addItem(arr, x) {
+    console.log(arr.length)
+    arr[arr.length] = x
+    return arr
+}
+
+objArr = addItem(objArr, 77)
 console.log(objArr)
+
+objArr[objArr.length] = 4
+
