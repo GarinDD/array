@@ -57,3 +57,18 @@ for (let i = 0; i < arr.length; i++){
     return arr;
 }
 console.log(arr)
+
+const obj = {
+    0: 1,
+    1: 2,
+}
+
+obj["2"] = 3
+
+console.log(obj)
+
+let objArr = [1,2]
+
+objArr[2] = 3
+
+console.log(objArr)
